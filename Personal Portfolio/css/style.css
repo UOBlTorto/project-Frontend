@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* .logo H1 a{
+    display: block;
+    float: left;
+    width: 171px;
+    height: 84px;
+    font-size: 0;
+    background: url(../images/FullLogo.png) no-repeat center / cover;
+}
+.shortcut nav{
+    float: right;
+} */
+
+.shortcut {
+  display: flex;
+  justify-content: space-between; /* logo左，nav右 */
+  align-items: flex-end; /* 底部对齐！关键 */
+  height: 61px; /* 与logo高度一致 */
+  margin-top: 20px;
+}
+
+.logo a {
+  display: block; /* 去掉float */
+  width: 171px;
+  height: 61px;
+  font-size: 0;
+  background: url(../images/FullLogo.png) no-repeat center / cover;
+}
+
+.shortcut nav {
+    /* 去掉float: right */
+    display: flex;               /* 使导航链接水平排列 */
+    justify-content: center;
+    align-items: center;         /* 垂直居中导航链接 */
+    gap: 20px;                   /* 链接之间的间距 */
+    height: 100%;               /* 占满父容器高度 */
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+/* 头像 */
+.avatar{
+  width: 150px;
+  height: 150px;
+  border: 3px solid #ddd; /* 添加边框 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* 添加阴影 */
+  border-radius: 50%;
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;/* 保持图片比例 */
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
